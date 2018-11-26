@@ -37,6 +37,17 @@ Logging::Rails.configure do |config|
     :logger => :bright_white,
     :message => :white
 )
+  # Colours set for dark theme console. Much easier, the whole line has a single colour
+  Logging.color_scheme(
+    'dark_by_lines',
+    lines: {
+      debug: :white,
+      info: :bright_green,
+      warn: :bright_yellow,
+      error: :bright_red,
+      fatal: [:white, :on_red]
+    }
+  )
 
   # Configure an appender that will write log events to STDOUT. A colorized
   # pattern layout is used to format the log events into strings before

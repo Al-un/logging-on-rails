@@ -1,0 +1,23 @@
+# ------------------------------------------------------------------------------
+# Log4r configuration file kept for learning purpose
+# ------------------------------------------------------------------------------
+
+# log4r_config:
+
+#   loggers:
+
+#   - name: development
+#     level: DEBUG
+#     trace: true
+#     outputters:
+#       - console
+
+#   # outputters:
+#   # - type        : DateFileOutputter
+#   #   name        : development
+#   #   filename    : development.log
+#   #   dirname     : "log"
+#   #   formatter   :
+#   #     date_pattern  : '%H:%M:%S'
+#   #     pattern       : '%d %l: %m '
+#   #     type          : PatternFormatter

@@ -2,7 +2,6 @@
 
 # https://github.com/freeformz/logglier
 Rails.application.configure do
-  # Display offline warning
   logger_config = ENV['LOGGER_CONFIG']
   if ['LOGGLY', 'FINAL'].include?(logger_config)
     # Environment dependent tagging
