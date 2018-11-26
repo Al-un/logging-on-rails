@@ -1,0 +1,18 @@
+<h1>Hello logging world</h1>
+
+<p>Loaded articles:</p>
+
+<table class="articles">
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Description</th>
+  </tr>
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.id %></td>
+      <td><%= article.title %></td>
+      <td><%= article.description %></td>
+    </tr>
+  <% end %>
+</table>
